@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-car"></i>
+                <a href="#">Electric Car</a>
+            </div>
+            <div class="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <label for="cars">Ordenar por:</label>
+            <div class="select-car">
+                <select name="cars" class="cars">
+                    <option value="Marca">Marca</option>
+                    <option value="Color">Color</option>
+                    <option value="Modelo">Modelo</option>
+                    <option value="Antiguedad">Antiguedad</option>
+                </select>
+            </div>
+        </main>
+        <section class="flex-car">
+            <div class="cards-car">
+                <img src="./assets/img/blackcar.png" alt="blackcar">
+                <p>Lamborghini Black</p>
+                <a href="#">Cotiza aquí</a>
+            </div>
+            <div class="cards-car">
+                <img src="./assets/img/bluecar.png" alt="bluecar">
+                <p>Auto Eléctrico</p>
+                <a href="#">Cotiza aquí</a>
+            </div>
+            <div class="cards-car">
+                <img src="./assets/img/clasiccar.jpg" alt="clasiccar">
+                <p>Volkswagen clásico</p>
+                <a href="#">Cotiza aquí</a>
+            </div>
+            <div class="cards-car">
+                <img class="graycar" src="./assets/img/graycar.png" alt="graycar">
+                <p>Lamborghini Gray</p>
+                <a href="#">Cotiza aquí</a>
+            </div>
+            <div class="cards-car">
+                <img class="oldcar" src="./assets/img/oldcar.jpg" alt="oldcar">
+                <p>Materdor Cars</p>
+                <a href="#">Cotiza aquí</a>
+            </div>
+            <div class="cards-car">
+                <img src="./assets/img/redcar.jpg" alt="redcar">
+                <p>Mercedes-Benz Red</p>
+                <a href="#">Cotiza aquí</a>
+            </div>
+        </section>
+        <section class="paginacion">
+            <ul>
+                <li><i class="left fa-solid fa-angles-left"></i></li>
+                <li><a class="page" href="#">1</a></li>
+                <li><a class="page" href="#">2</a></li>
+                <li><a class="page" href="#">3</a></li>
+                <li><i class="right fa-solid fa-angles-right"></i></li>
+            </ul>
+        </section>
+        <footer>
+            <a href="#"><i class=" fb fa-brands fa-facebook"></i></a>
+            <a href="#"><i class=" ig fa-brands fa-instagram"></i></a>
+            <a href="#"><i class=" tt fa-brands fa-tiktok"></i></a>
+            <p>Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>

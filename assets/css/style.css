@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*inicio diseño versión mobile */
+
+/* inicio de css - header */
+
+header{
+    background-color: #118ab2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-desktop{
+    display: none;
+}
+.menu-mobile{
+    order: 3;
+}
+
+/*fin de css - header */
+
+/* inicio de css - main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: hsla(0, 0%, 50%,0.15);
+    padding: 5px;
+}
+
+main label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.select-car .cars{
+    width: 10em;
+    border: 1px solid hsla(0, 0%, 50%,0.45);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+/*fin de css - main */
+
+.cards-car {
+    border: 1px solid hsla(0, 0%, 0%, 0.25);
+    border-radius: 8px;
+    width: 25em;
+    margin-top: 10px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-car img{
+    width: 25em;
+    border-radius: 8px ;
+}
+
+.cards-car .graycar{
+    width: 25.7em;
+    border-radius: 15px;
+}
+
+.cards-car .oldcar{
+    width: 24.8em;
+    border-radius: 8px;
+    height: 18em;
+}
+.cards-car p{
+    text-align: center;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards-car a{
+    text-decoration: none;
+    width: 10em;
+    text-align: center;
+    color: hsl(0, 0%, 96%);
+    background-color: #118ab2;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #118ab2;
+    border-radius: 20px;
+}
+
+/*fin css cars*/
+
+/*inicio css barra de paginación*/
+ .paginacion ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+ }
+
+ .paginacion ul li{
+    list-style-type: none;
+    border: 1px solid hsla(0, 0%, 0%,0.15);
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+ }
+
+ .paginacion .page{
+    color: #118ab2;
+    text-decoration: none;
+ }
+
+ .paginacion .left, .right{
+    color: #118ab2;
+ }
+
+/*fin css barra de paginación*/
+
+/*inicio css footer*/
+
+footer{
+    background-color: #118ab2;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer i{
+    color: white;
+}
+
+footer .fb:hover{
+    color: #898F9C;
+}
+
+footer .ig:hover{
+    color: #FCAF45;
+}
+
+footer .tt:hover{
+    color: #E50914;
+}
+/*fin css footer*/
+
+/*fin diseño versión mobile */
+
+
+/*inicio diseño versión desktop */
+
+@media screen and (min-width: 577px){
+
+    header{
+        grid-area: header;
+        display: grid;
+        justify-content: center;
+        gap: 20px;;
+    }
+
+    .menu-mobile{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: grid;
+        height: 20em;
+    }
+
+    .menu-desktop ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+    .menu-desktop ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    main{
+        grid-area: main;
+        height: 60px;
+    }
+    .select-car .cars{
+        width: 60vw;
+        border: 1px solid hsla(0, 0%, 50%,0.45);
+        border-radius: 10px;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .flex-car{
+        height: 30em;
+        grid-area: cards;
+        display:grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        overflow-y: scroll;
+    }
+
+    .cards-car{
+        width: 10em;
+        height: 15em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards-car img{
+        width: 9.9em;
+        margin-bottom: 80px;
+    }
+
+    .cards-car p{
+        font-weight: 100;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1em;
+    }
+
+    .cards-car a{
+        width: 100px;
+    }
+
+    .cards-car .graycar{
+        width: 10em;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .cards-car .oldcar{
+        width: 9.8em;
+        border-radius: 8px;
+        height: 8em;
+        margin-bottom: 30px;
+    }
+    .paginacion{
+        grid-area: paginacion;
+        margin-top: 20px;
+    }
+    footer{
+        grid-area: footer;
+        background-color: hsla(240, 90%, 20%, 0.966);
+        text-align: center;
+        height: 5em;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+        "header main main"
+        "header cards cards"
+        "footer paginacion paginacion";
+    }
+}
